@@ -77,9 +77,9 @@ module.exports = {
             `${lang.msg65}: \`${queue.songs[0].name}\`
     ${current.map(
       (data) =>
-        `\n\`${sayı++}\` | [${data.title}](${data.url}) | **${data.author}** (${
-          lang.msg66
-        } <@${data.user.id}>)`,
+        `\n\`${sayı++}\` | [${data.title}](${data.url}) (**${
+          data.author
+        }**)\n(${lang.msg66} <@${data.user.id}>)`,
     )}`,
           )
           .setFooter({ text: `${lang.msg67} ${page}/${Math.floor(a + 1)}` });
