@@ -1,54 +1,81 @@
 module.exports = {
-    botToken: process.env.TOKEN,
-    ownerID: [""], 
-    botInvite: "", 
-    supportServer: "", 
-    mongodbURL: "", 
-    status: 'ngao nghe 1t10',
-    commandsDir: './commands', 
-    language: "en", 
-    embedColor: "ffa954", 
-    errorLog: "", 
+  botToken: process.env.DISCORD_BOT_TOKEN,
+  ownerID: [""],
+  botInvite: "",
+  supportServer: "",
+  mongodbURL: "",
+  status: "ngao nghe 1t10",
+  commandsDir: "./commands",
+  language: "en",
+  embedColor: "ffa954",
+  errorLog: "",
 
+  sponsor: {
+    status: false,
+    url: "https://example.com",
+  },
 
-    sponsor: {
-        status: false, 
-        url: "https://example.com",
+  voteManager: {
+    status: false,
+    api_key: "",
+    vote_commands: [
+      "back",
+      "channel",
+      "clear",
+      "dj",
+      "filter",
+      "loop",
+      "nowplaying",
+      "pause",
+      "play",
+      "playlist",
+      "queue",
+      "resume",
+      "save",
+      "search",
+      "skip",
+      "stop",
+      "time",
+      "volume",
+    ],
+    vote_url: "",
+  },
+
+  shardManager: {
+    shardStatus: false,
+  },
+
+  playlistSettings: {
+    maxPlaylist: 10,
+    maxMusic: 75,
+  },
+
+  opt: {
+    DJ: {
+      commands: [
+        "back",
+        "clear",
+        "filter",
+        "loop",
+        "pause",
+        "resume",
+        "skip",
+        "stop",
+        "volume",
+        "shuffle",
+      ],
     },
 
-    voteManager: { 
-        status: false, 
-        api_key: "", 
-        vote_commands: ["back", "channel", "clear", "dj", "filter", "loop", "nowplaying", "pause", "play", "playlist", "queue", "resume", "save", "search", "skip", "stop", "time", "volume"], 
-        vote_url: "", 
+    voiceConfig: {
+      leaveOnFinish: false,
+      leaveOnStop: false,
+
+      leaveOnEmpty: {
+        status: true,
+        cooldown: 10000000,
+      },
     },
 
-    shardManager: {
-        shardStatus: false 
-    },
-
-    playlistSettings: {
-        maxPlaylist: 10, 
-        maxMusic: 75, 
-    },
-
-    opt: {
-        DJ: {
-            commands: ['back', 'clear', 'filter', 'loop', 'pause', 'resume', 'skip', 'stop', 'volume', 'shuffle'] 
-        },
-
-        voiceConfig: {
-            leaveOnFinish: false, 
-            leaveOnStop: false, 
-
-            leaveOnEmpty: { 
-                status: true, 
-                cooldown: 10000000, 
-            },
-
-        },
-
-        maxVol: 150, 
-
-    }
-}
+    maxVol: 150,
+  },
+};
