@@ -1,7 +1,7 @@
 {
-  "name": "musicbot-v14.11",
+  "name": "musicbot",
   "version": "15.3.0",
-  "description": "discord.js v14.7 music bot. for slash commands",
+  "description": "ok",
   "main": "index.js",
   "dependencies": {
     "@discordjs/builders": "^1.6.5",
@@ -27,8 +27,8 @@
   "scripts": {
     "start": "node index.js"
   },
-  "author": "UmutBayraktar",
-  "license": "ISC",
+  "author": "minhcrafters",
+  "license": "LGPL-3.0-only",
   "engines": {
     "node": "18.x"
   }
