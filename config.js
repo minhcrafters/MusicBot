@@ -12,7 +12,7 @@ module.exports = {
 
 
     sponsor: {
-        status: true, 
+        status: false, 
         url: "https://example.com",
     },
 
