@@ -22,7 +22,7 @@ const language = {
     error3: "Error reloading application [/] commands: ",
     error4: "WARN: It looks like you didn't write the mongodb url? If you do not enter a valid mongodb url in the config.js file, you will not be able to use the bot.",
     msg13: `🎵 Now playing: **{track?.title}** -> Channel: **{queue?.connection.channel.name}** 🎧`,
-    msg14: "Queue is empty. You can play some more music, byebye... ✅",
+    msg14: "Finished playing. ✅",
     msg15: "I disconnected because there is no one left in my channel. ❌",
     msg16: "I'm having trouble connecting to the voice channel. ❌ Like someone disconnected me? Im very sad. 😔",
     msg17: "There is no previous track! ❌",
